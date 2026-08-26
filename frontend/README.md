@@ -8,6 +8,9 @@ The frontend of the School Management System.
 - Student management
 - Staff management
 - Attendance
+- Exams
 - Grades
-- Fees
+- School Fees
 - Reports
+- Timetable
+- Notifications
