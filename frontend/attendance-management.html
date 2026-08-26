@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance | School Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Attendance Management</h1>
+    <p>Record and monitor student attendance</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Record Attendance</h2>
+
+        <form>
+            <label>Student Number</label><br>
+            <input type="text" placeholder="e.g. STU-001" required>
+            <br><br>
+
+            <label>Subject</label><br>
+            <input type="text" placeholder="Subject name" required>
+            <br><br>
+
+            <label>Date</label><br>
+            <input type="date" required>
+            <br><br>
+
+            <label>Status</label><br>
+            <select required>
+                <option value="">Select status</option>
+                <option>Present</option>
+                <option>Absent</option>
+                <option>Late</option>
+                <option>Excused</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Save Attendance</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Attendance Records</h2>
+
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Student No.</th>
+                    <th>Subject</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>STU-001</td>
+                    <td>Mathematics</td>
+                    <td>2026-08-26</td>
+                    <td>Present</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 School Management System</p>
+</footer>
+
+</body>
+</html>
