@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Fees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>School Fees Management</h1>
+    <p>Manage student fees and payments</p>
+</header>
+
+<main>
+    <section>
+        <h2>Fee Summary</h2>
+
+        <p><strong>Total Fees:</strong> $0.00</p>
+        <p><strong>Total Paid:</strong> $0.00</p>
+        <p><strong>Outstanding:</strong> $0.00</p>
+    </section>
+
+    <section>
+        <h2>Record Payment</h2>
+
+        <form>
+            <label for="student">Student Name</label><br>
+            <input type="text" id="student" name="student" required><br><br>
+
+            <label for="fee">Fee Type</label><br>
+            <select id="fee" name="fee">
+                <option>Tuition</option>
+                <option>Registration</option>
+                <option>Examination</option>
+                <option>Other</option>
+            </select><br><br>
+
+            <label for="amount">Amount Paid</label><br>
+            <input type="number" id="amount" name="amount" min="0" step="0.01" required><br><br>
+
+            <label for="method">Payment Method</label><br>
+            <select id="method" name="method">
+                <option>Cash</option>
+                <option>Bank</option>
+                <option>Mobile Money</option>
+                <option>Card</option>
+            </select><br><br>
+
+            <button type="submit">Record Payment</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Recent Payments</h2>
+
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Fee Type</th>
+                    <th>Amount</th>
+                    <th>Method</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td colspan="5">No payments recorded yet.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 School Management System</p>
+</footer>
+
+</body>
+</html>
