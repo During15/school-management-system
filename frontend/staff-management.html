@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff | School Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Staff Management</h1>
+    <p>Manage teachers and school staff</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Add Staff Member</h2>
+
+        <form>
+            <label>Staff Number</label><br>
+            <input type="text" placeholder="e.g. STF-001" required>
+            <br><br>
+
+            <label>First Name</label><br>
+            <input type="text" placeholder="First name" required>
+            <br><br>
+
+            <label>Last Name</label><br>
+            <input type="text" placeholder="Last name" required>
+            <br><br>
+
+            <label>Position</label><br>
+            <input type="text" placeholder="e.g. Teacher">
+            <br><br>
+
+            <label>Email</label><br>
+            <input type="email" placeholder="staff@example.com">
+            <br><br>
+
+            <label>Phone</label><br>
+            <input type="tel" placeholder="Phone number">
+            <br><br>
+
+            <button type="submit">Add Staff</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Staff Records</h2>
+
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Staff No.</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>STF-001</td>
+                    <td>Example Teacher</td>
+                    <td>Teacher</td>
+                    <td>teacher@example.com</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 School Management System</p>
+</footer>
+
+</body>
+</html>
