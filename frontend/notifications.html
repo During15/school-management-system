@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Notifications</h1>
+    <p>School announcements and important updates</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Recent Notifications</h2>
+
+        <article>
+            <h3>📢 School Announcement</h3>
+            <p>Welcome to the new academic term.</p>
+            <small>August 28, 2026</small>
+        </article>
+
+        <hr>
+
+        <article>
+            <h3>📝 Examination Notice</h3>
+            <p>Mid-term examinations will begin soon. Check the exam schedule.</p>
+            <small>August 27, 2026</small>
+        </article>
+
+        <hr>
+
+        <article>
+            <h3>💰 Fee Reminder</h3>
+            <p>Please check your school fee balance and payment status.</p>
+            <small>August 26, 2026</small>
+        </article>
+
+        <hr>
+
+        <article>
+            <h3>📚 Academic Update</h3>
+            <p>Students should check their timetable for any schedule changes.</p>
+            <small>August 25, 2026</small>
+        </article>
+
+    </section>
+
+    <section>
+        <h2>Send Notification</h2>
+
+        <form>
+            <label for="recipient">Recipient:</label><br>
+            <select id="recipient">
+                <option>All Students</option>
+                <option>All Teachers</option>
+                <option>All Staff</option>
+                <option>Specific Class</option>
+            </select>
+
+            <br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" rows="5" cols="40"
+                placeholder="Write notification..."></textarea>
+
+            <br><br>
+
+            <button type="submit">Send Notification</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 School Management System</p>
+</footer>
+
+</body>
+</html>
