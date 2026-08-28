@@ -6,40 +6,101 @@
     <title>Grades Management</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
     <h1>Grades Management</h1>
-    <p>Manage student examination results</p>
+    <p>Enter, manage and view student examination results</p>
 </header>
 
 <main>
-    <section>
-        <h2>Student Results</h2>
 
-        <table border="1" width="100%" cellpadding="10">
+    <section>
+        <h2>Enter Grade</h2>
+
+        <form>
+            <label for="student">Student:</label><br>
+            <select id="student" required>
+                <option value="">Select Student</option>
+                <option>STU001 - John Doe</option>
+                <option>STU002 - Jane Doe</option>
+            </select>
+            <br><br>
+
+            <label for="exam">Exam:</label><br>
+            <select id="exam" required>
+                <option value="">Select Exam</option>
+                <option>Mid-Term Mathematics</option>
+                <option>Final Computer Science</option>
+            </select>
+            <br><br>
+
+            <label for="marks">Marks:</label><br>
+            <input type="number" id="marks" min="0" max="100" placeholder="Enter marks" required>
+            <br><br>
+
+            <label for="grade">Grade:</label><br>
+            <select id="grade" required>
+                <option value="">Select Grade</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>F</option>
+            </select>
+            <br><br>
+
+            <label for="remarks">Remarks:</label><br>
+            <input type="text" id="remarks" placeholder="Optional remarks">
+            <br><br>
+
+            <button type="submit">Save Grade</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Student Grades</h2>
+
+        <table border="1" width="100%">
             <thead>
                 <tr>
-                    <th>Student Number</th>
+                    <th>Student ID</th>
                     <th>Student Name</th>
-                    <th>Subject</th>
+                    <th>Exam</th>
                     <th>Marks</th>
                     <th>Grade</th>
+                    <th>Remarks</th>
                 </tr>
             </thead>
 
             <tbody>
                 <tr>
                     <td>STU001</td>
-                    <td>Example Student</td>
-                    <td>Mathematics</td>
+                    <td>John Doe</td>
+                    <td>Mid-Term Mathematics</td>
                     <td>85</td>
                     <td>A</td>
+                    <td>Excellent</td>
+                </tr>
+
+                <tr>
+                    <td>STU002</td>
+                    <td>Jane Doe</td>
+                    <td>Mid-Term Mathematics</td>
+                    <td>72</td>
+                    <td>B</td>
+                    <td>Good</td>
                 </tr>
             </tbody>
         </table>
     </section>
+
 </main>
+
+<footer>
+    <p>&copy; 2026 School Management System</p>
+</footer>
 
 </body>
 </html>
